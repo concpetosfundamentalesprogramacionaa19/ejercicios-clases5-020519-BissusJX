@@ -6,24 +6,23 @@
    obtener la proyeccion del costo de la carrera de un estudiante.
 """
 valorPromedio = 1200
-#seguro = 100 
-#seguro2 = 150
+
 edad = input("ingrese la edad del estudiante\n")
-modalidad = input ("ingrese la modalidad del estudiante\n")
+modalidad = input ("ingrese la modalidad del estudiante si es a distancia ingrese 1 sino ingrese 2 \n")
 #ciclo = input ("ingrese el ciclo en que se encuentra el estudiante\n")
 edad = int (edad)
-seguro = int (seguro)
-seguro2 = int (seguro2)
-if (edad<=20)
+modalidad = int (modalidad)
+if (edad <= 20):
      seguro = 100
-   print ("el valor promedio del seguro por ciclo es de %d", seguro)
-   else:
-   	if (edad>20)
+     
+else:
+   	if (edad > 20):
    	     seguro = 150
-   	   print ("el valor promedio del seguro por ciclo es de %d", seguro)
-if (modalidad == distancia)
-   ciclo = 10
-   else:
-   	ciclo = 8 
-   	totalSeguro = ciclo * (seguro* 1200)
+   	    
+if (modalidad == 1):
+   ciclo == 10
+else:
+   	ciclo == 8 
+total = (ciclo + 1200 ) * (ciclo * seguro)
+print (total)
 
