@@ -8,21 +8,31 @@
 valorPromedio = 1200
 
 edad = input("ingrese la edad del estudiante\n")
-modalidad = input ("ingrese la modalidad del estudiante si es a distancia ingrese 1 sino ingrese 2 \n")
+modalidad = input ("ingrese la modalidad del estudiante si es a distancia ingrese 1 y si es Presencial ingrese 2 \n")
 #ciclo = input ("ingrese el ciclo en que se encuentra el estudiante\n")
 edad = int (edad)
 modalidad = int (modalidad)
-if (edad <= 20):
-     seguro = 100
+seguro = 0
+seguro = int (seguro) 
+if (edad <= 20) and (modalidad == 1):
+     seguro = 10 * 100
      
 else:
-   	if (edad > 20):
-   	     seguro = 150
+   	if (edad > 20) and (modalidad == 1):
+   	     seguro = 10 *150
+           
+if (edad <= 20) and (modalidad == 2):
+     seguro = 8 * 100
+     
+else:
+      if (edad > 20) and (modalidad == 2):
+           seguro = 8 *150
    	    
 if (modalidad == 1):
-   ciclo == 10
+   total = (valorPromedio * 10)
 else:
-   	ciclo == 8 
-total = (ciclo + 1200 ) * (ciclo * seguro)
+   total = (valorPromedio * 8) 
+
+total = total + seguro
 print (total)
 
